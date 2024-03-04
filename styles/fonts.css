@@ -1,0 +1,14 @@
+/* styles/fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@font-face {
+    font-family: 'imprima';
+    src: url('../public/fonts/Imprima-Regular.ttf') format('truetype');
+  }
+
+body, a, a p {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'imprima', sans-serif;
+}
