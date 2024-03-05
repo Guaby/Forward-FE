@@ -85,3 +85,7 @@ a:focus {
 .active {
   display: block;
 }
+
+.arrow-btn {
+  transition-property: padding, width;
+}
