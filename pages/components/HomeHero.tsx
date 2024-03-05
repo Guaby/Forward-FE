@@ -5,7 +5,7 @@ const HomeHero = () => {
 
   useEffect(() => {
 
-    const arrowBTN = document.querySelector<SVGPathElement>('.arrow-btn');
+    const arrowBTN = document.querySelector<SVGPathElement>('.arrow-btn-hero');
     const arrowLine = document.querySelector<SVGPathElement>('.arrow-line');
 
     if (arrowLine && arrowBTN) {
@@ -45,7 +45,7 @@ const HomeHero = () => {
                   </span>
               </a>
 
-              <a className="w-full md:w-80 bg-slate-500/40 py-5 xl:py-7 px-8 md:pl-24 flex items-center justify-between text-white rounded-full transform md:-translate-x-16 arrow-btn md:hover:pl-28 md:hover:pr-10 md:hover:w-[360px] hover:bg-slate-500/50 transition-all duration-500" href="#">
+              <a className="w-full md:w-80 bg-slate-500/40 py-5 xl:py-7 px-8 md:pl-24 flex items-center justify-between text-white rounded-full transform md:-translate-x-16 arrow-btn-hero md:hover:pl-28 md:hover:pr-10 md:hover:w-[360px] hover:bg-slate-500/50 transition-all duration-500" href="#">
                   <p className="text-base">Work with us</p>
                   <span className="block">
                     <svg width="50" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="button-arrow transition-all duration-300">
