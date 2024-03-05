@@ -18,9 +18,9 @@ const Footer = () => {
 
     
     return (
-      <div className="footer p-6 lg:p-24 pb-0 flex flex-col lg:grid grid-cols-2 bg-slate-200">
+      <div className="footer p-6 lg:p-24 lg:pb-4 pb-0 flex flex-col lg:grid grid-cols-2 bg-slate-200">
 
-        <div className='flex flex-col-reverse lg:flex-row lg:col-span-1'>
+        <div className='flex flex-col-reverse lg:flex-row lg:col-span-2'>
             <div className="w-full">
                 <ul>
                     <li className='mb-4 text-xl'> <Link href="#">home</Link> </li>
