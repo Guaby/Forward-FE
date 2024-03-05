@@ -40,7 +40,7 @@ const HomeHero = () => {
                   <p className="text-base">Open manifesto</p>
                   <span className="block">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:rotate-90 transition-all duration-700">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95455 0H6.04545V6.04545H0V7.95455H6.04545V14H7.95455V7.95455H14V6.04545H7.95455V0Z" fill="white"/>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M7.95455 0H6.04545V6.04545H0V7.95455H6.04545V14H7.95455V7.95455H14V6.04545H7.95455V0Z" fill="white"/>
                   </svg>
                   </span>
               </a>

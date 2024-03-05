@@ -7,10 +7,6 @@ import HomeSlider from "./components/HomeSlider";
 import Join from "./components/Join";
 import Magnet from "./components/Magnet";
 
-// import { TextPlugin } from "gsap/dist/TextPlugin";
-// gsap.registerPlugin(TextPlugin);
-
-
 export default function Home() {
 
   return (
