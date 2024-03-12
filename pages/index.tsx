@@ -6,6 +6,7 @@ import Brands from "./components/Brands";
 import HomeSlider from "./components/HomeSlider";
 import Join from "./components/Join";
 import Magnet from "./components/Magnet";
+import Why from "./components/Why";
 
 export default function Home() {
 
@@ -55,6 +56,10 @@ export default function Home() {
 
       {/* logos */}
       <Brands></Brands>
+
+      {/* Why PR */}
+
+      <Why></Why>
 
       {/* join us */}
       <Join></Join>

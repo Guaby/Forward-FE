@@ -89,3 +89,39 @@ a:focus {
 .arrow-btn {
   transition-property: padding, width;
 }
+
+/* cicrular text */
+
+.circular-text-container {
+  position: relative;
+  animation: rotate 10s linear infinite;
+}
+
+.cls-1 {
+  fill: #1d4ed8;
+  stroke: white;
+  stroke-width: 3rem;
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+.cls-3{
+  fill: white;
+  font-family: Copperplate-Bold, Copperplate;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.cls-2{
+  fill:#fff;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}

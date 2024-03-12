@@ -118,7 +118,7 @@ const HomeSlider = () => {
                           <h5 className="info category">Data Science - AI</h5>
                       </div>
                       <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward strives to create a great work environment that nurtures and develops talent professionally, while fostering a sense of community.</h3>
-                      <Button></Button>
+                      <Button color={'black'} text={'Learn more'}></Button>
                     </li>
 
                     <li className="w-full slide">
@@ -127,7 +127,7 @@ const HomeSlider = () => {
                         <h5 className="info category">Travel - Culture</h5>
                     </div>
                     <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward was founded in 2018 with the intention of revitalizing Puerto Rico's economy following the devastating Hurricane María.</h3>
-                    <Button></Button>
+                    <Button color={'black'} text={'Learn more'}></Button>
                     </li>
 
                     <li className="w-full slide">
@@ -136,7 +136,7 @@ const HomeSlider = () => {
                         <h5 className="info category">Fintech - Banking</h5>
                     </div>
                     <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward has a diverse portfolio of teams spanning across multiple industries, including finance, data, marketing, and the consumer marketplace.</h3>
-                    <Button></Button>
+                    <Button color={'black'} text={'Learn more'}></Button>
                     </li>
 
                     <li className="w-full slide">
@@ -145,7 +145,7 @@ const HomeSlider = () => {
                         <h5 className="info category">Business - SEO</h5>
                     </div>
                     <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">We are currently seeking talented individuals to join our dynamic teams across various industries, as we continue to expand.</h3>
-                    <Button></Button>
+                    <Button color={'black'} text={'Learn more'}></Button>
                     </li>
 
                     <li className="w-full slide">
@@ -154,7 +154,7 @@ const HomeSlider = () => {
                         <h5 className="info category">Travel - AI</h5>
                     </div>
                     <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">At Forward, we strive to make a positive social impact in Puerto Rico through community initiatives and support.</h3>
-                    <Button></Button>
+                    <Button color={'black'} text={'Learn more'}></Button>
                     </li>
 
                 </ul>
