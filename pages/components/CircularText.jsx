@@ -1,14 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-
 const CircularText = () => {
-    // const svgRef = useRef(null);
-
-    // useEffect(() => {
-    //     if (svgRef.current) {
-    //         const svgElement = svgRef.current;
-    //         svgElement.style.mixBlendMode = 'difference';
-    //     }
-    // }, []);
     
   return (
     <div className="circular-text-container">
@@ -50,7 +40,7 @@ const CircularText = () => {
                 <tspan x="0" y="0"> </tspan></text><text class="cls-3" transform="translate(102.64 261.63) rotate(-62.99)">
                 <tspan x="0" y="0">•</tspan></text><text class="cls-3" transform="translate(115.09 237.07) rotate(-57.99)">
                 <tspan x="0" y="0"> </tspan></text><text class="cls-3" transform="translate(129.86 213.33) rotate(-52.98)">
-                <tspan x="0" y="0"> </tspan></text><path class="cls-1" d="M393.42,458.32c-35.79,0-64.91-29.12-64.91-64.91s29.12-64.91,64.91-64.91,64.91,29.12,64.91,64.91-29.12,64.91-64.91,64.91Z"/>
+                <tspan x="0" y="0"> </tspan></text><path class="cls-1 hidden md:block" d="M393.42,458.32c-35.79,0-64.91-29.12-64.91-64.91s29.12-64.91,64.91-64.91,64.91,29.12,64.91,64.91-29.12,64.91-64.91,64.91Z"/>
             </g>
         </svg>
     </div>
