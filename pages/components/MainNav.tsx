@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { gsap } from "gsap";
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const MainNavigation = () => {
 
@@ -16,7 +16,6 @@ const MainNavigation = () => {
     const bottomLine = document.querySelector('.bottom-line') as HTMLElement | null;
 
     const openNav = () => {
-
       window.addEventListener('resize', checkScreenWidth);
 
       if(topLine && bottomLine && hamMenu) {
@@ -40,11 +39,9 @@ const MainNavigation = () => {
         });
         setMobileNavVisible(true);
       }
-
     };
 
     const closeNav = () => {
-
       if(topLine && bottomLine && hamMenu) {
         gsap.to(topLine, {rotation: 0, y: 0, duration: 0.3, ease: "power2.out"});
         gsap.to(bottomLine, {rotation: 0, duration: 0.3, ease: "power2.out"});
@@ -78,22 +75,19 @@ const MainNavigation = () => {
     if (hamMenu) {
       hamMenu.addEventListener('click', toggleMobileLinks);
     }
-    // Remove event listener when component unmounts
+    // Remove e when c unmounts
     return () => {
       if (hamMenu) {
         hamMenu.removeEventListener('click', toggleMobileLinks);
       }
     };
 
-    // Function to check screen width and trigger animation
     function checkScreenWidth() {
       const screenWidth = window.innerWidth;
       if (screenWidth > 767) {
-        closeNav(); // Call the toggleMenu function to animate hamburger to X
+        closeNav();
       }
     }
-
-
 
   }, [mobileNavVisible]);
 
@@ -126,14 +120,13 @@ const MainNavigation = () => {
             <div className="flex-shrink-0 flex items-center h-full">
               <Link legacyBehavior href="/">
                 <a className="font-bold text-xl">
-                <Image
-                  src="/images/logos/logo-icon.svg"
-                  alt="Forward logo"
-                  className=""
-                  width={20}
-                  height={200}
-                />
-
+                  <Image
+                    src="/images/logos/logo-icon.svg"
+                    alt="Forward logo"
+                    className=""
+                    width={20}
+                    height={200}
+                  />
                 </a>
               </Link>
             </div>

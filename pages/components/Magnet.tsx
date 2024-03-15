@@ -14,14 +14,14 @@ const Magnet: React.FC<MagnetProps> = ({ children }: MagnetProps) => {
       if (ref.current) {
         const {clientX, clientY } = e;
         const { width, height, left, top } = ref.current.getBoundingClientRect();
-        const x = (clientX - (left + width / 2)) / 4;
-        const y = (clientY - (top + height / 2)) / 4;
-        gsap.to(ref.current, {x: x, y: y, duration: 2, scale: 0.8 , ease:'power2.out'});
+        const x = (clientX - (left + width / 2)) / 6;
+        const y = (clientY - (top + height / 2)) / 6;
+        gsap.to(ref.current, {x: x, y: y, duration: 1, scale: 0.8 , ease:'power2.out'});
       }
     };
 
     const mouseLeave = (e: MouseEvent) => {
-      gsap.to(ref.current, {x: 0, y: 0, duration: 2, scale: 1, ease:'power2.out'});
+      gsap.to(ref.current, {x: 0, y: 0, duration: 1, scale: 1, ease:'power2.out'});
     };
 
     const addEventListeners = () => {

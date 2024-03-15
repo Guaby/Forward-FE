@@ -27,7 +27,7 @@ const Why = () => {
                         </video>
                     </div>
                     <div className="w-64 h-64 absolute top-0 right-0 -translate-x-4 translate-y-4 scale-150 md:translate-x-8 md:-translate-y-24 lg:-translate-y-20 md:scale-95">
-                        <CircularText/>
+                    <CircularText isCenterHidden={false} isBlack={false}/>
                     </div>
                     <span className="hidden md:flex w-24 h-24 bg-white absolute bottom-0 left-0 rounded-full translate-x-10 translate-y-2 lg:-translate-y-1 items-center justify-center scale-90">
                         <Image

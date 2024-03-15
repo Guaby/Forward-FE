@@ -7,12 +7,14 @@ import HomeSlider from "./components/HomeSlider";
 import Join from "./components/Join";
 import Magnet from "./components/Magnet";
 import Why from "./components/Why";
+import Manifiesto from "./components/manifiesto";
 
 export default function Home() {
 
   return (
     <div>
     <MainNavigation />
+    <Manifiesto/>
     <main> 
       <HomeHero />
 

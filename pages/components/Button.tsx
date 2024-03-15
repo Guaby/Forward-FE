@@ -44,7 +44,7 @@ interface ButtonProps {
   }, []);
   
   return (
-    <a className={`w-full md:w-80 py-5 px-8 flex items-center justify-between rounded-full border mt-8 lg:mt-16 info link arrow-btn xl:hover:px-10 duration-500 lg:hover:w-[22rem] ease-out ${color === 'white' ? 'text-white border-white' : 'text-black border-black'}`} href="#">
+    <a className={`w-full md:w-80 py-5 px-8 flex items-center justify-between rounded-full border info link arrow-btn xl:hover:px-10 duration-500 lg:hover:w-[22rem] ease-out ${color === 'white' ? 'text-white border-white' : 'text-black border-black'}`} href="#">
         <p className={`text-base ${color === 'white' ? 'text-white' : 'text-black'}`}>{text}</p>
         <span className="block">
         <svg width="50" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { useEffect, useRef, useState, createRef } from "react";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 import Button from "./Button";
+import CircularText from "./CircularText";
+
 gsap.registerPlugin(TextPlugin);
 
 const HomeSlider = () => {
@@ -162,7 +164,7 @@ const HomeSlider = () => {
 
             {/* images  */}
 
-            <div className="w-full h-auto md:h-lvh md:max-h-medium xl:max-h-lg xl:w-1/2 2xl:max-h-xl 3xl:max-h-huge">
+            <div className="w-full h-auto md:h-lvh md:max-h-medium xl:max-h-lg xl:w-1/2 2xl:max-h-xl 3xl:max-h-huge relative">
                 <div className="h-mobile md:h-full bg-teal-100 relative slide-img-wrapper">
                     <div className="flex items-center w-full h-full justify-between absolute top-0 left-0">
                         {/* images  */}
@@ -239,6 +241,20 @@ const HomeSlider = () => {
                         </div>
                         
                     </div>
+                </div>
+                <div className="w-64 h-64 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-32">
+                  <div className="relative">
+                    <CircularText isCenterHidden={true} isBlack={true}/>
+                    <span className="absolute top-2 left-1/2 transform -translate-x-1/2 translate-y-20 bg-cyan-950 w-20 h-20 flex items-center justify-center rounded-full">
+                      <Image
+                              src="/images/frog.png"
+                              alt="Forward logo"
+                              className="translate-y-0"
+                              width={30}
+                              height={30}
+                          />
+                    </span>
+                  </div>
                 </div>
             </div>
       </section>
