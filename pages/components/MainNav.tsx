@@ -183,7 +183,7 @@ const MainNavigation = () => {
       </nav>
 
      
-      <div className="w-screen h-svh fixed md:hidden z-40">
+      <div className="w-screen h-svh fixed invisible md:hidden z-40">
         <div className="w-full h-full absolute left-0 top-0 bg-white mobile-nav pt-12 pb-6  hidden flex-col justify-between">
           <ul className={`mt-10 px-5 mobile-links`}>
             <li>

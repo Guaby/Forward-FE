@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import Manifiesto from "./Manifiesto";
 
 const HomeHero = () => {
 
@@ -7,6 +8,29 @@ const HomeHero = () => {
 
     const arrowBTN = document.querySelector<SVGPathElement>('.arrow-btn-hero');
     const arrowLine = document.querySelector<SVGPathElement>('.arrow-line');
+
+    const manifiestoCTA = document.querySelector('.btn-manifiesto') as HTMLElement | null;
+    const manifiesto = document.querySelector(".manifiesto") as HTMLElement | null;
+    const exit = document.querySelector('.exit-manifiesto') as HTMLElement | null;
+
+
+    const openMani = () => {
+          
+      if (manifiesto) {
+        gsap.fromTo(manifiesto, {
+          autoAlpha: 0,
+          y: 20,
+        }, {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.4,
+          ease: "power2.out",
+          onStart: () => {
+            console.log('manifiesto opened.')
+          }
+        });
+      }
+    };
 
     if (arrowLine && arrowBTN) {
       arrowBTN.addEventListener('mouseover', () => {
@@ -17,11 +41,16 @@ const HomeHero = () => {
         gsap.to(arrowLine, { attr: { d: 'M45 6H0' }, duration: 1, ease:'pawer2.in' });
       });
     }
+
+    if (manifiestoCTA && manifiesto && exit) {
+      manifiestoCTA.addEventListener('click', openMani);
+    }
     
   }, []);
 
     return (
       <div className="w-screen hero-height">
+        <Manifiesto/>
         <div className="w-full h-full bg-black relative flex items-end">
           <video
             className="w-full h-full object-cover absolute top-0 left-0 z-0 opacity-50"
@@ -36,7 +65,7 @@ const HomeHero = () => {
             <h1 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-[4vw] text-white w-full md:w-4/5 lg:w-4/5 mb-8 md:mb-12">The platform driving change and innovation in Puerto Rico.</h1>
             <div className="flex flex-col md:flex-row items-center">
 
-              <a className="group w-full md:w-64 hover:w-full md:hover:w-72 bg-blue-700 py-5 xl:py-7 px-8 mb-4 md:mb-0 flex items-center justify-between text-white rounded-full z-10 xl:hover:px-9 hover:bg-blue-600 transition-all duration-500" href="#">
+              <a className="group w-full md:w-64 hover:w-full md:hover:w-72 bg-blue-700 py-5 xl:py-7 px-8 mb-4 md:mb-0 flex items-center justify-between text-white rounded-full z-10 xl:hover:px-9 hover:bg-blue-600 transition-all duration-500 btn-manifiesto" href="#">
                   <p className="text-base">Open manifesto</p>
                   <span className="block">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:rotate-90 transition-all duration-700">
