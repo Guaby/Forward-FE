@@ -45,7 +45,7 @@ const Why = () => {
                         <h5 className="info name">Work in Paradise</h5>
                     </div>
                     <h3 className="text-2xl xl:text-3xl 3xl:text-5xl my-6 info description">Become a part of the Forward Platform as we push the boundaries of growth and innovation.</h3>
-                    <Button color={'white'} text={'Join the movement'}></Button>
+                    <Button color={'white'} text={'Join the movement'} fullW={false}></Button>
                 </div>
 
             </div>
