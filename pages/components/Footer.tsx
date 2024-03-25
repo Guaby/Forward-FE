@@ -26,6 +26,7 @@ const Footer = () => {
                     <li className='mb-4 text-xl'> <Link href="#">home</Link> </li>
                     <li className='mb-4 text-xl'> <Link href="#">about</Link> </li>
                     <li className='mb-4 text-xl'> <Link href="#">careers</Link> </li>
+                    <li className='mb-4 text-xl'> <Link href="#">internships</Link> </li>
                     <li className='mb-4 text-xl'> <Link href="#">news</Link> </li>
                     <li className='mb-4 text-xl'> <Link href="#">contact</Link> </li>
                 </ul>

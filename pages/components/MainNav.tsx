@@ -143,7 +143,7 @@ const MainNavigation = () => {
                 <Link legacyBehavior href="/contact">
                   <a className="border-b-2 border-solid border-transparent hover:border-blue-600 px-3 py-2 hover:pt-3 text-xs font-medium h-full flex items-center transition-all ease-in-out duration-300">contact</a>
                 </Link>
-                <div>
+                <div className="cursor-pointer h-full">
                   <a className="border-b-2 border-solid border-transparent hover:border-blue-600 px-3 py-2 hover:pt-3 text-xs font-medium h-full flex items-center transition-all ease-in-out duration-300">
                     <Image
                     src="/images/lang.png"
@@ -159,12 +159,12 @@ const MainNavigation = () => {
 
             {/* Mobile right side */}
             <div className="flex gap-2 md:hidden items-center h-full z-50">
-                  <div className="ham-menu flex flex-col gap-1.5 h-full items-center justify-center scale-90">
+                  <div className="ham-menu flex flex-col gap-1.5 h-full items-center justify-center scale-90 cursor-pointer">
                     <span className="menu-line top-line w-8 h-0.5 bg-black"></span>
                     <span className="menu-line bottom-line w-8 h-0.5 bg-black"></span>
                   </div>
                   <div className="h-full">
-                    <a className="border-b-2 border-solid border-transparent hover:border-blue-600 px-3 py-2 hover:pt-3 text-xs font-medium h-full flex items-center transition-all ease-in-out duration-300">
+                    <a className="border-b-2 border-solid border-transparent hover:border-blue-600 px-3 py-2 hover:pt-3 text-xs font-medium h-full flex items-center transition-all ease-in-out duration-300 cursor-pointer">
                       <Image
                       src="/images/lang.png"
                       alt="Forward logo"

@@ -34,7 +34,7 @@ const Manifiesto = () => {
       }, []);
     
     return (
-      <div className="fixed w-full h-full z-40 invisible flex items-end p-8 md:justify-end manifiesto bg-slate-800/50 md:bg-transparent">
+      <div className="fixed w-full h-full z-50 invisible flex items-end p-8 md:justify-end manifiesto bg-slate-800/50 md:bg-transparent">
         <div className="bg-slate-800 text-white w-full md:w-96 h-[30rem] translate-x-2/2 rounded-3xl overflow-hidden relative">
           <div className="px-8 py-3 pb-0 mb-0 flex items-center justify-between z-10 relative">
               <h2 className="text-lg">Our Manifiesto</h2>

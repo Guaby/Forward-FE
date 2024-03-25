@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Join = () => {
     
     return (
@@ -11,15 +13,9 @@ const Join = () => {
             </div>
 
             <div className="w-full bg-join col-start-1 col-end-13 mt-8 xl:mt-16 mb-8 relative max-h-96 lg:max-h-none">
-                <a className="absolute bottom-0 right-0 w-full lg:w-auto bg-blue-700 z-10 py-8 px-10 lg:gap-44 flex items-center justify-between" href="#">
-                    <p>See Open Positions</p>
-                    <span className="block">
-                    <svg width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M60.1279 1L65.1279 6L60.1279 11" stroke="white" strokeWidth="2.55319"/>
-                        <path d="M65 6H0" stroke="white" strokeWidth="2"/>
-                    </svg>
-                    </span>
-                </a>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full lg:w-auto z-10 py-8 px-10 lg:gap-44 flex items-center justify-between">
+                    <Button color={'white'} text={'See Open Positions'} fullW={false}></Button>
+                </div>
             </div>
 
             <div className="flex flex-col lg:grid grid-cols-12 gap-12 lg:gap-24 col-span-12">

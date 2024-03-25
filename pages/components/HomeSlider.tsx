@@ -55,7 +55,7 @@ const HomeSlider = () => {
         const nextDescription = nextSlide.querySelector(".info.description") as HTMLElement;
         const nextLink = nextSlide.querySelector(".info.link") as HTMLAnchorElement;
       
-        gsap.to([currentName, currentCategory, currentDescription, currentLink], {
+        gsap.to([currentName, currentDescription, currentLink], {
           duration: 0.3,
           opacity: 0,
           y: -10,
@@ -65,7 +65,7 @@ const HomeSlider = () => {
             currentSlide.classList.add("slide");
             nextSlide.classList.add("active");
       
-            gsap.fromTo([nextName, nextCategory, nextDescription, nextLink], {
+            gsap.fromTo([nextName, nextDescription, nextLink], {
               opacity: 0,
               y: -10,
             }, {
@@ -116,46 +116,46 @@ const HomeSlider = () => {
 
                     <li className="w-full slide active">
                       <div className="flex w-full justify-between text-xs">
-                          <h5 className="info name">Xtillion Team</h5>
-                          <h5 className="info category">Data Science - AI</h5>
+                          <h5 className="info name bg-slate-200 text-slate-400 px-4 py-2 rounded-full uppercase">EST. 2018</h5>
+                          {/* <h5 className="info category"></h5> */}
                       </div>
-                      <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward strives to create a great work environment that nurtures and develops talent professionally, while fostering a sense of community.</h3>
+                      <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description lg:mb-10">Founded in 2018 with the intention of revitalizing Puerto Rico's economy following the devastating Hurricane María.</h3>
                       <Button color={'black'} text={'Learn more'} fullW={false}></Button>
                     </li>
 
                     <li className="w-full slide">
                     <div className="flex w-full justify-between text-xs">
-                        <h5 className="info name">Platea Team</h5>
-                        <h5 className="info category">Travel - Culture</h5>
+                        <h5 className="info name bg-slate-200 text-slate-400 px-4 py-2 rounded-full uppercase">Platea</h5>
+                        {/* <h5 className="info category">Travel - Culture</h5> */}
                     </div>
-                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward was founded in 2018 with the intention of revitalizing Puerto Rico's economy following the devastating Hurricane María.</h3>
+                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description lg:mb-10">Forward was founded in 2018 with the intention of revitalizing Puerto Rico's economy following the devastating Hurricane María.</h3>
                     <Button color={'black'} text={'Learn more'} fullW={false}></Button>
                     </li>
 
                     <li className="w-full slide">
                     <div className="flex w-full justify-between text-xs">
-                        <h5 className="info name">Nave Bank Team</h5>
-                        <h5 className="info category">Fintech - Banking</h5>
+                        <h5 className="info name bg-slate-200 text-slate-400 px-4 py-2 rounded-full uppercase">Nave Bank</h5>
+                        {/* <h5 className="info category">Fintech - Banking</h5> */}
                     </div>
-                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">Forward has a diverse portfolio of teams spanning across multiple industries, including finance, data, marketing, and the consumer marketplace.</h3>
+                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description lg:mb-10">Forward has a diverse portfolio of teams spanning across multiple industries, including finance, data, marketing, and the consumer marketplace.</h3>
                     <Button color={'black'} text={'Learn more'} fullW={false}></Button>
                     </li>
 
                     <li className="w-full slide">
                     <div className="flex w-full justify-between text-xs">
-                        <h5 className="info name">RVPR Team</h5>
-                        <h5 className="info category">Business - SEO</h5>
+                        <h5 className="info name bg-slate-200 text-slate-400 px-4 py-2 rounded-full uppercase">RVPR</h5>
+                        {/* <h5 className="info category">Business - SEO</h5> */}
                     </div>
-                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">We are currently seeking talented individuals to join our dynamic teams across various industries, as we continue to expand.</h3>
+                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description lg:mb-10">We are currently seeking talented individuals to join our dynamic teams across various industries, as we continue to expand.</h3>
                     <Button color={'black'} text={'Learn more'} fullW={false}></Button>
                     </li>
 
                     <li className="w-full slide">
                     <div className="flex w-full justify-between text-xs">
-                        <h5 className="info name">Guide Team</h5>
-                        <h5 className="info category">Travel - AI</h5>
+                        <h5 className="info name bg-slate-200 text-slate-400 px-4 py-2 rounded-full uppercase">Guide</h5>
+                        {/* <h5 className="info category">Travel - AI</h5> */}
                     </div>
-                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description">At Forward, we strive to make a positive social impact in Puerto Rico through community initiatives and support.</h3>
+                    <h3 className="text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl my-6 info description lg:mb-10">At Forward, we strive to make a positive social impact in Puerto Rico through community initiatives and support.</h3>
                     <Button color={'black'} text={'Learn more'} fullW={false}></Button>
                     </li>
 

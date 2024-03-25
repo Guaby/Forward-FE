@@ -42,9 +42,9 @@ const Why = () => {
 
                 <div className="">
                     <div className="flex w-full justify-between text-xs">
-                        <h5 className="info name">Work in Paradise</h5>
+                        <h5 className="info name bg-blue-600 text-blue-300 px-4 py-2 rounded-full uppercase">A paradise for everyone</h5>
                     </div>
-                    <h3 className="text-2xl xl:text-3xl 3xl:text-5xl my-6 info description">Become a part of the Forward Platform as we push the boundaries of growth and innovation.</h3>
+                    <h3 className="text-2xl xl:text-3xl 3xl:text-5xl my-6 info description lg:mb-10">Become a part of the Forward Platform as we push the boundaries of growth and innovation.</h3>
                     <Button color={'white'} text={'Join the movement'} fullW={false}></Button>
                 </div>
 
