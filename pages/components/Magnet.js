@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -44,6 +43,8 @@ const Magnet = ({ children }) => {
       removeEventListeners();
     };
   }, []);
+
+  if (!children) return null; // Handle case where children are undefined
 
   return React.cloneElement(children, { ref });
 };
