@@ -23,7 +23,7 @@ const Why = () => {
                             muted
                             playsInline
                         >
-                            <source src="/videos/pr5.mp4" type="video/mp4" />
+                            <source src="/videos/bg-5.mp4" type="video/mp4" />
                         </video>
                     </div>
                     <div className="w-64 h-64 absolute top-0 right-0 -translate-x-4 translate-y-4 scale-150 md:translate-x-8 md:-translate-y-24 lg:-translate-y-20 md:scale-95">

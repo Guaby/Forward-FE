@@ -59,7 +59,7 @@ const HomeHero = () => {
             muted
             playsInline
           >
-            <source src="/videos/fwd-bg.mp4" type="video/mp4" />
+            <source src="/videos/bg-6.mp4" type="video/mp4" />
           </video>
           <div className="w-full mx-auto px-6 py-10 md:px-10 md:py-16 lg:px-12 xl:py-24 xl:px-16 2xl:px-24 z-10">
             <h1 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-[4vw] text-white w-full md:w-4/5 lg:w-4/5 mb-8 md:mb-12">The platform driving change and innovation in Puerto Rico.</h1>
