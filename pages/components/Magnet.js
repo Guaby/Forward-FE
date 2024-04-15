@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, isValidElement } from "react";
 import gsap from "gsap";
 
 const Magnet = ({ children }) => {
@@ -44,7 +44,7 @@ const Magnet = ({ children }) => {
     };
   }, []);
 
-  if (!children) return null; // Handle case where children are undefined
+  if (!children || !isValidElement(children)) return null; // Check if children is defined and a valid React element
 
   return React.cloneElement(children, { ref });
 };
