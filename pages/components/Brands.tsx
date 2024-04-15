@@ -72,6 +72,16 @@ const Brands = () => {
         </li>
         <li>
           <Image
+            src="/images/logos/nave.svg"
+            layout='responsive'
+            alt="RVPR logo"
+            className="min-w-40 brand-item"
+            width={200}
+            height={200}
+          />
+        </li>
+        <li>
+          <Image
             src="/images/logos/guide.svg"
             layout='responsive'
             alt="RVPR logo"
