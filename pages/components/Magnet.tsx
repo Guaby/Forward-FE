@@ -28,6 +28,8 @@ const Magnet: React.FC<MagnetProps> = ({ children }: MagnetProps) => {
       if (ref.current !== null && ref.current.parentElement !== null) {
         ref.current.parentElement.addEventListener('mousemove', mouseMove);
         ref.current.parentElement.addEventListener('mouseleave', mouseLeave);
+      } else {
+        console.log('magnet null')
       }
     };
 
@@ -35,6 +37,8 @@ const Magnet: React.FC<MagnetProps> = ({ children }: MagnetProps) => {
       if (ref.current !== null && ref.current.parentElement !== null) {
         ref.current.parentElement.removeEventListener('mousemove', mouseMove);
         ref.current.parentElement.removeEventListener('mouseleave', mouseLeave);
+      } else {
+        console.log('magnet null')
       }
     };
 
